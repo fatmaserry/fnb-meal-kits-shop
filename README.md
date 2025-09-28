@@ -25,10 +25,11 @@ A modern and responsive web shop for Food & Beverage (F&B) meal kits. Users can 
    ```bash
    git clone https://github.com/fatmaserry/fnb-meal-kits-shop.git
    ```
-Open index.html in your browser.
+2. Open index.html in your browser.
 
-Future Improvements
-Backend integration for dynamic meal kits and orders.
-User authentication for personalized carts.
-Search and filter for products.
-Accessibility and SEO enhancements.
+## Future Improvements
+
+- Backend integration for dynamic meal kits and orders.
+- User authentication for personalized carts.
+- Search and filter for products.
+- Accessibility and SEO enhancements.
