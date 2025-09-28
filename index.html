@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F&B Meal Kits | Landing</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/imgs/bar-icon.png" />
+    <!-- Boxicons icons library -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Swiper.js styles for slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Mobile logo -->
+      <a href="index.html" class="logo mobile">F&B</a>
+
+      <!-- Navigation -->
+      <ul class="nav">
+        <li><a class="menu-item" href="index.html">Home</a></li>
+        <li><a class="menu-item" href="products.html">Meal Kits</a></li>
+        <li><a href="index.html" class="logo">F&B</a></li>
+        <li><a class="menu-item" href="about.html">About Us</a></li>
+        <li><a class="menu-item" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Cart Icon -->
+      <div class="cart">
+        <i class="bx bx-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="menu-btn">
+        <div class="bx bx-menu" id="icon-menu"></div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO SECTION ================= -->
+      <div class="about">
+        <h1>
+          Cook Like a <span class="chef-span auto-type"></span> <br />
+          <span>Fresh Ingredients, Easy Recipes, Delivered to You</span>
+        </h1>
+
+        <!-- Search bar for meal kits -->
+        <div class="search-bar">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search for Meal Kits"
+          />
+          <button type="button" title="search" class="search-icon">
+            <i class="bx bx-search-alt"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ================= HOW IT WORKS ================= -->
+      <section class="steps-container hidden">
+        <div class="heading col">
+          <h2>Here's How It <span>Works</span></h2>
+          <p>Meal Kits Made Simple in 3 Steps</p>
+        </div>
+
+        <div class="steps">
+          <!-- Step 1 -->
+          <div class="step">
+            <img src="./assets/imgs/step1.jpg" alt="Choose your plan" />
+            <div class="step-text">
+              <h3>Choose Your Plan</h3>
+              <p>
+                Select from a variety of meal kits designed to fit your
+                lifestyle.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step">
+            <img src="./assets/imgs/step2.jpg" alt="Fresh delivery" />
+            <div class="step-text">
+              <h3>Get Fresh Delivery</h3>
+              <p>
+                Receive pre-portioned fresh ingredients right at your doorstep.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step">
+            <img src="./assets/imgs/step3.jpg" alt="Cook & enjoy" />
+            <div class="step-text">
+              <h3>Cook & Enjoy</h3>
+              <p>
+                Follow simple step-by-step recipes and enjoy home-cooked meals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CATEGORIES ================= -->
+      <section class="categories-container hidden">
+        <div class="heading-col">
+          <div class="heading">
+            <img
+              class="italic-icon-r"
+              src="./assets/imgs/restaurant-icon.png"
+              alt="icon"
+            />
+            <h2>Meal Kit Categories</h2>
+            <img
+              class="italic-icon-l"
+              src="./assets/imgs/hamburger-icon.png"
+              alt="icon"
+            />
+          </div>
+          <a href="#" class="view-btn">VIEW ALL</a>
+        </div>
+
+        <!-- Categories injected dynamically via JS -->
+        <div id="categories"></div>
+      </section>
+
+      <!-- ================= TRENDING MEAL KITS ================= -->
+      <section class="recipes hidden">
+        <div class="heading-col">
+          <div class="heading">
+            <img class="right-one" src="./assets/imgs/pizza-icon.png" alt="" />
+            <h2>Popular Meal Kits</h2>
+            <img src="./assets/imgs/pizza-icon.png" alt="" />
+          </div>
+          <a href="/products.html" class="view-btn">VIEW ALL</a>
+        </div>
+
+        <!-- Swiper slider container -->
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper"></div>
+        </div>
+      </section>
+
+      <!-- ================= SUBSCRIBE SECTION ================= -->
+      <section class="contact hidden">
+        <div class="contact-subscribe">
+          <h1>Deliciousness To Your Inbox</h1>
+          <p>
+            Be the first to know about new meal kits, seasonal specials, and
+            exclusive offers. Join our foodie family today!
+          </p>
+          <div class="subscribe-bar">
+            <input
+              type="text"
+              class="subscribe-input"
+              placeholder="Enter your email address"
+            />
+            <button class="subscribe-btn">SUBSCRIBE</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <!-- Column 1 -->
+      <div class="f1">
+        <h1 class="logo">F&B</h1>
+        <h4>Contact</h4>
+        <h5>Email: support@fnbmealkits.com</h5>
+        <div class="contact-links">
+          <h4>Follow Us</h4>
+          <p class="footicon">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-pinterest"></i>
+            <i class="bx bxl-linkedin"></i>
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="f2">
+        <p>About Us</p>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+        <p>Contact Us</p>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="f3">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="platforms">
+          <button type="button">
+            <i class="bx bxl-apple"></i>
+            <p>App Store</p>
+          </button>
+          <button type="button">
+            <i class="bx bxl-play-store"></i>
+            <p>Google Play</p>
+          </button>
+        </div>
+
+        <p>&copy; 2025 F&B Meal Kits. All Rights Reserved.</p>
+
+        <!-- Feedback form -->
+        <form class="feed">
+          <h4 class="review">Customer Reviews</h4>
+          <textarea
+            name="inreview"
+            cols="30"
+            rows="4"
+            placeholder="Tell us about your meal kit experience"
+          ></textarea>
+          <input type="submit" value="SUBMIT" class="submit-feed-btn" />
+        </form>
+      </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+      <div class="cart-modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+          <h3>Total: $<span id="cart-total">0.00</span></h3>
+        </div>
+        <button id="checkout-btn" class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+
+    <!-- ================= SCRIPTS ================= -->
+    <!-- Swiper.js functionality -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Scroll animations -->
+    <script src="./js/scroll.js"></script>
+
+    <script src="./js/slider.js"></script>
+
+    <!-- Typed.js effect -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Main custom script -->
+    <script src="./js/data.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
